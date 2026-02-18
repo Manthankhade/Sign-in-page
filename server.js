@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const bcrypt = require("bcryptjs");
 const session = require("express-session");
 const User = require("./models/User");
-
+const path = require("path");
 
 const app = express();
 
