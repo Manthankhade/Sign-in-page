@@ -54,7 +54,24 @@ app.get("/contact.html", (req, res) => {
 app.get("/services.html", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "services.html"));
 });
-
+app.get("/signup.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "signup.html"));
+});
+app.get("/bands.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "bands.html"));
+});
+app.get("/decorations.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "decorations.html"));
+});
+app.get("/dinners.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "dinners.html"));
+});
+app.get("/halls.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "halls.html"));
+});
+app.get("/login.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "login.html"));
+});
 
 // Signup
 app.post("/signup", async (req, res) => {
