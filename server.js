@@ -43,10 +43,10 @@ app.get("/dashboard", (req, res) => {
 
 // dasboard route added here 
 app.get("/dashboard.html", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "dashboard.html"));
+  res.sendFile(path.join(__dirname, "views", "dashboard.html"));
 });
 app.get("/about.html", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "about.html"));
+  res.sendFile(path.join(__dirname, "views", "about.html"));
 });
 
 
